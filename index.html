@@ -9,7 +9,8 @@
   <body>
     <div id="root"></div>
     <div style="display:flex; flex-direction: column; gap: 24px; align-items: center; width: 100%; padding-top: 100px;">
-    <input id="url-input" type="text" value="https://booking-git-cbp-417-scrollama-issue.preview.staging.setmore.com/beta/_companies/udhayastag" style="width:400px; height: 20px; border-radius: 5px; border-width: 1px; padding: 3px;" />
+    <input id="url-input" type="text" value="https://thinkmill.staging.setmore.com/" style="width:400px; height: 20px; border-radius: 5px; border-width: 1px; padding: 3px;" />
+		<button onClick="document.getElementById('setmore-iframe').src = document.getElementById('url-input').value">Update iframe</button>
 		<script>
 			var isBookinPageLoaded = false;
 			var filePath = 'https://my.setmore.com/';
@@ -318,6 +319,8 @@
 						alt="Click here to book the appointment using setmore" /></noscript
 			></a>
 		</div>
+
+		<iframe src="https://thinkmill.staging.setmore.com/" height="800px" />
   </div>
 	</body>
 </html>
